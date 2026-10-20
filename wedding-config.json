@@ -1,0 +1,303 @@
+{
+  "_comment": "File cấu hình thiệp cưới - Chỉ cần thay đổi thông tin trong file này",
+  "coupleInfo": {
+    "_comment": "Thông tin cô dâu chú rể",
+    "bride": {
+      "name": "Nguyễn Thị Ngọc",
+      "title": "Cô Dâu",
+      "parents": "Con gái của ông bà Nguyễn Văn Điệp và Phạm Thị Ngoan",
+      "description": "Là một nhân viên văn phòng hiện đang làm việc tại Hà Nội. Tính cách là người hiền lành và ít nói, luôn coi trọng tình cảm và yêu thương gia đình. Quan điểm sống của cô: \"Gia đình là điểm tựa vững chắc nhất và là bến đỗ bình yên không đâu sánh bằng đôi với mỗi con người. Đó luôn là nơi tràn ngập tình yêu thương để ta trở về\"",
+      "image": "./images/wedding/bride-main.jpg",
+      "images": {
+        "_comment": "left = ảnh chính (lớn), right = ảnh phụ (nhỏ, chồng lên góc)",
+        "desktop": {
+          "left": "./images/wedding/bride-main.jpg",
+          "right": "./images/wedding/bride-sub.jpg"
+        },
+        "mobile": {
+          "left": "./images/wedding/bride-main.jpg",
+          "right": "./images/wedding/bride-sub.jpg"
+        }
+      },
+      "facebook": "https://www.facebook.com/ngocnguyenmabel",
+      "instagram": "#"
+    },
+    "groom": {
+      "name": "Nguyễn Bá Hà",
+      "title": "Chú Rể",
+      "parents": "Con trai của ông bà Nguyễn Văn Cường và Trần Thị Nga",
+      "description": "Là một nhân viên văn phòng đang làm việc tại Hà Nội. Tính cách là người ít nói, luôn coi trọng tình cảm và yêu thương gia đình. Quan điểm sống của anh: \"Gia đình là điểm tựa vững chắc nhất và là bến đỗ bình yên không đâu sánh bằng đôi với mỗi con người. Đó luôn là nơi tràn ngập tình yêu thương để ta trở về\"",
+      "image": "./images/wedding/groom-main.jpg",
+      "images": {
+        "_comment": "left = ảnh chính (lớn), right = ảnh phụ (nhỏ, chồng lên góc)",
+        "desktop": {
+          "left": "./images/wedding/groom-main.jpg",
+          "right": "./images/wedding/groom-sub.jpg"
+        },
+        "mobile": {
+          "left": "./images/wedding/groom-main.jpg",
+          "right": "./images/wedding/groom-sub.jpg"
+        }
+      },
+      "facebook": "https://www.facebook.com/nguyen.ba.ha.661706",
+      "instagram": "#"
+    }
+  },
+  "weddingDate": {
+    "_comment": "Thông tin ngày cưới - Format: YYYY-MM-DDTHH:MM:SS",
+    "datetime": "2026-11-15T09:00:00",
+    "displayDate": "15 . 11 . 2026",
+    "invitationText": "Tham dự lễ thành hôn của chúng tôi."
+  },
+  "heroSlider": {
+    "_comment": "Ảnh slider ở phần hero - Desktop và Mobile có ảnh riêng biệt",
+    "desktop": {
+      "_comment": "3 ảnh cho hero slider trên desktop",
+      "images": [
+        {
+          "url": "./images/wedding/hero-desktop-1.jpg",
+          "alt": "Ảnh bìa 1"
+        },
+        {
+          "url": "./images/wedding/hero-desktop-2.jpg",
+          "alt": "Ảnh bìa 2"
+        },
+        {
+          "url": "./images/wedding/hero-desktop-3.jpg",
+          "alt": "Ảnh bìa 3"
+        }
+      ]
+    },
+    "mobile": {
+      "_comment": "3 ảnh riêng cho hero slider trên mobile - tối ưu cho màn hình nhỏ",
+      "images": [
+        {
+          "url": "./images/wedding/hero-mobile-1.jpg",
+          "alt": "Ảnh bìa 1"
+        },
+        {
+          "url": "./images/wedding/hero-mobile-2.jpg",
+          "alt": "Ảnh bìa 2"
+        },
+        {
+          "url": "./images/wedding/hero-mobile-3.jpg",
+          "alt": "Ảnh bìa 3"
+        }
+      ]
+    }
+  },
+  "galleryImages": {
+    "_comment": "Ảnh album cưới: url = ảnh lớn khi phóng to, thumb = ảnh nhỏ hiển thị trong lưới",
+    "images": [
+      {
+        "url": "./images/wedding/gallery-05.jpg",
+        "thumb": "./images/wedding/gallery-05-thumb.jpg",
+        "alt": "Ảnh cưới 1"
+      },
+      {
+        "url": "./images/wedding/gallery-16.jpg",
+        "thumb": "./images/wedding/gallery-16-thumb.jpg",
+        "alt": "Ảnh cưới 2"
+      },
+      {
+        "url": "./images/wedding/gallery-10.jpg",
+        "thumb": "./images/wedding/gallery-10-thumb.jpg",
+        "alt": "Ảnh cưới 3"
+      },
+      {
+        "url": "./images/wedding/gallery-02.jpg",
+        "thumb": "./images/wedding/gallery-02-thumb.jpg",
+        "alt": "Ảnh cưới 4"
+      },
+      {
+        "url": "./images/wedding/gallery-13.jpg",
+        "thumb": "./images/wedding/gallery-13-thumb.jpg",
+        "alt": "Ảnh cưới 5"
+      },
+      {
+        "url": "./images/wedding/gallery-09.jpg",
+        "thumb": "./images/wedding/gallery-09-thumb.jpg",
+        "alt": "Ảnh cưới 6"
+      },
+      {
+        "url": "./images/wedding/gallery-01.jpg",
+        "thumb": "./images/wedding/gallery-01-thumb.jpg",
+        "alt": "Ảnh cưới 7"
+      },
+      {
+        "url": "./images/wedding/gallery-15.jpg",
+        "thumb": "./images/wedding/gallery-15-thumb.jpg",
+        "alt": "Ảnh cưới 8"
+      },
+      {
+        "url": "./images/wedding/gallery-03.jpg",
+        "thumb": "./images/wedding/gallery-03-thumb.jpg",
+        "alt": "Ảnh cưới 9"
+      },
+      {
+        "url": "./images/wedding/gallery-11.jpg",
+        "thumb": "./images/wedding/gallery-11-thumb.jpg",
+        "alt": "Ảnh cưới 10"
+      },
+      {
+        "url": "./images/wedding/gallery-18.jpg",
+        "thumb": "./images/wedding/gallery-18-thumb.jpg",
+        "alt": "Ảnh cưới 11"
+      },
+      {
+        "url": "./images/wedding/gallery-06.jpg",
+        "thumb": "./images/wedding/gallery-06-thumb.jpg",
+        "alt": "Ảnh cưới 12"
+      },
+      {
+        "url": "./images/wedding/gallery-12.jpg",
+        "thumb": "./images/wedding/gallery-12-thumb.jpg",
+        "alt": "Ảnh cưới 13"
+      },
+      {
+        "url": "./images/wedding/gallery-04.jpg",
+        "thumb": "./images/wedding/gallery-04-thumb.jpg",
+        "alt": "Ảnh cưới 14"
+      },
+      {
+        "url": "./images/wedding/gallery-17.jpg",
+        "thumb": "./images/wedding/gallery-17-thumb.jpg",
+        "alt": "Ảnh cưới 15"
+      },
+      {
+        "url": "./images/wedding/gallery-07.jpg",
+        "thumb": "./images/wedding/gallery-07-thumb.jpg",
+        "alt": "Ảnh cưới 16"
+      },
+      {
+        "url": "./images/wedding/gallery-14.jpg",
+        "thumb": "./images/wedding/gallery-14-thumb.jpg",
+        "alt": "Ảnh cưới 17"
+      },
+      {
+        "url": "./images/wedding/gallery-08.jpg",
+        "thumb": "./images/wedding/gallery-08-thumb.jpg",
+        "alt": "Ảnh cưới 18"
+      }
+    ]
+  },
+  "weddingEvents": {
+    "_comment": "Thông tin các sự kiện trong ngày cưới",
+    "day1": {
+      "date": "Ngày 15 tháng 11 năm 2026",
+      "lunarDate": "(Ngày 07 tháng 10 năm Bính Ngọ)",
+      "events": [
+        {
+          "title": "Lễ ăn hỏi",
+          "time": "7 giờ - 9 giờ",
+          "description": "Xe xuất phát từ nhà trai lúc 7 giờ 15 phút."
+        },
+        {
+          "title": "Tiệc cưới",
+          "time": "17 giờ - 22 giờ",
+          "description": "Tiệc cưới được tổ chức tại địa điểm nhà trai và nhà gái theo địa chỉ trên map."
+        }
+      ]
+    },
+    "day2": {
+      "date": "Ngày 15 tháng 2 năm 2026",
+      "lunarDate": "(Ngày 06 tháng 01 Âm lịch)",
+      "events": [
+        {
+          "title": "Lễ đón dâu",
+          "time": "8 giờ - 10 giờ",
+          "description": "Xe xuất phát từ nhà trai lúc 8 giờ 15 phút."
+        },
+        {
+          "title": "Tiệc cưới",
+          "time": "10 giờ - 13 giờ",
+          "description": "Tiệc cưới được tổ chức tại nhà trai bắt đầu từ 10 giờ 30 phút."
+        }
+      ]
+    },
+    "_legacy": {
+      "ceremony": {
+        "title": "Lễ Thành Hôn",
+        "icon": "fas fa-church",
+        "date": "Chủ Nhật, 15/02/2026",
+        "time": "10:00 AM",
+        "venue": "Nhà thờ Tân Định",
+        "address": "Xóm 3, Xã Giao Bình, Tỉnh Ninh Bình"
+      },
+      "reception": {
+        "title": "Tiệc Cưới",
+        "icon": "fas fa-utensils",
+        "date": "Chủ Nhật, 15/02/2026",
+        "time": "10:00 AM",
+        "venue": "Khách sạn Park Hyatt",
+        "address": "Xóm 3, Xã Giao Bình, Tỉnh Ninh Bình"
+      }
+    }
+  },
+  "contactInfo": {
+    "_comment": "Thông tin liên hệ và mạng xã hội",
+    "facebook": "#",
+    "instagram": "#",
+    "twitter": "#"
+  },
+  "musicSettings": {
+    "_comment": "Cài đặt nhạc nền",
+    "musicFile": "./images/wedding-music.mp3",
+    "volume": 0.3,
+    "startTime": 60,
+    "_startTimeComment": "Nhạc bắt đầu (và mỗi lần lặp lại) từ giây này. 60 = phút thứ 1",
+    "autoPlay": true
+  },
+  "seoSettings": {
+    "_comment": "Cài đặt SEO và meta tags",
+    "title": "Hà & Ngọc - Thiệp Cưới",
+    "description": "Thiệp cưới online của chúng tôi - Chúng tôi sắp kết hôn!",
+    "ogImage": "https://nguyenbaha.github.io/thiep-cuoi/images/wedding/share.jpg"
+  },
+  "mapSettings": {
+    "_comment": "Cài đặt Google Maps - Thay đổi embed URL theo địa điểm thực tế",
+    "brideFamily": {
+      "title": "Nhà Gái",
+      "address": "Xóm 3, Xã Giao Bình, Tỉnh Ninh Bình",
+      "embedUrl": "https://www.google.com/maps/place/20%C2%B014'34.7%22N+106%C2%B024'07.8%22E/@20.2429722,106.3995918,17z/data=!3m1!4b1!4m4!3m3!8m2!3d20.2429722!4d106.4021667?entry=ttu&g_ep=EgoyMDI1MDcyOC4wIKXMDSoASAFQAw%3D%3D"
+    },
+    "groomFamily": {
+      "title": "Nhà Trai",
+      "address": "Xóm 3, Xã Giao Bình, Tỉnh Ninh Bình",
+      "embedUrl": "https://www.google.com/maps/place/20%C2%B014'34.7%22N+106%C2%B024'07.8%22E/@20.2429722,106.3995918,17z/data=!3m1!4b1!4m4!3m3!8m2!3d20.2429722!4d106.4021667?entry=ttu&g_ep=EgoyMDI1MDcyOC4wIKXMDSoASAFQAw%3D%3D"
+    }
+  },
+  "sliderSettings": {
+    "_comment": "Cài đặt slider",
+    "heroAutoPlayInterval": 7000,
+    "galleryAutoPlayInterval": 5000
+  },
+  "bankingInfo": {
+    "_comment": "Thông tin tài khoản ngân hàng và QR code - điền khi bật lại phần Mừng cưới",
+    "title": "Mừng Cưới",
+    "description": "Thay lời chúc, cảm ơn bạn đã gửi lời chúc mừng đến đám cưới của chúng tôi",
+    "bride": {
+      "name": "Nguyễn Thị Ngọc",
+      "bankName": "",
+      "accountNumber": "",
+      "accountName": "",
+      "qrCode": ""
+    },
+    "groom": {
+      "name": "Nguyễn Bá Hà",
+      "bankName": "",
+      "accountNumber": "",
+      "accountName": "",
+      "qrCode": ""
+    }
+  },
+  "_instructions": {
+    "howToUse": "Để customize website:",
+    "step1": "Thay đổi thông tin trong file này",
+    "step2": "Upload ảnh của bạn lên imgur, cloudinary hoặc hosting khác",
+    "step3": "Copy URL ảnh và paste vào các trường image trong file này",
+    "step4": "Thay đổi tên, địa chỉ, ngày cưới theo thông tin thực tế",
+    "step5": "Chạy website để xem kết quả",
+    "note": "Không cần chỉnh sửa code HTML/CSS/JS, chỉ cần thay đổi file JSON này"
+  }
+}

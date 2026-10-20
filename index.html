@@ -1,0 +1,626 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
+    <title>Hà &amp; Ngọc - Thiệp Cưới</title>
+    
+    <!-- Mobile optimizations -->
+    <meta name="theme-color" content="#a64d5f">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <meta name="apple-mobile-web-app-title" content="Wedding Invitation">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="msapplication-TileColor" content="#a64d5f">
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Thiệp cưới online của chúng tôi ">
+    <meta property="og:title" content="Wedding Invitation - Thiệp Cưới Online">
+    <meta property="og:description" content="Thiệp cưới online của chúng tôi ">
+    <meta property="og:image" content="https://nguyenbaha.github.io/thiep-cuoi/images/wedding/share.jpg">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://nguyenbaha.github.io/thiep-cuoi/">
+    
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Wedding Invitation - Thiệp Cưới Online">
+    <meta name="twitter:description" content="Thiệp cưới online của chúng tôi ">
+    <meta name="twitter:image" content="https://nguyenbaha.github.io/thiep-cuoi/images/wedding/share.jpg">
+    
+    <!-- CSS Dependencies -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css">
+    
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Poppins:wght@300;400;500;600;700&family=Great+Vibes&family=Playfair+Display:wght@400;500;600;700&family=Cormorant+Garamond:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <!-- <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <span>💕 Wedding</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home">Trang chủ</a></li>
+                <li><a href="#couple">Cô dâu & Chú rể</a></li>
+                <li><a href="#gallery">Album ảnh</a></li>
+                <li><a href="#details">Chi tiết</a></li>
+                <li><a href="#rsvp">Lưu bút</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav> -->
+
+    <!-- Music Control -->
+    <div class="music-control">
+        <button id="musicToggle" class="music-btn" title="Phát/Tắt nhạc cưới">
+            <i class="fas fa-volume-up"></i>
+        </button>
+        <audio id="weddingMusic" preload="auto" data-start="60">
+            <source src="./images/wedding-music.mp3" type="audio/mpeg">
+            Trình duyệt của bạn không hỗ trợ phát nhạc.
+        </audio>
+    </div>
+
+    <!-- Hero Section với Parallax -->
+    <section id="home" class="hero">
+        <!-- Desktop Hero Slider -->
+        <div class="hero-slider hero-slider-desktop">
+            <div class="hero-slide active">
+                <div class="hero-background" style="background-image: url('./images/wedding/hero-desktop-1.jpg')"></div>
+            </div>
+            <div class="hero-slide">
+                <div class="hero-background" style="background-image: url('./images/wedding/hero-desktop-2.jpg')"></div>
+            </div>
+            <div class="hero-slide">
+                <div class="hero-background" style="background-image: url('./images/wedding/hero-desktop-3.jpg')"></div>
+            </div>
+        </div>
+        
+        <!-- Mobile Hero Slider -->
+        <div class="hero-slider hero-slider-mobile">
+            <div class="hero-slide active">
+                <div class="hero-background" style="background-image: url('./images/wedding/hero-mobile-1.jpg')"></div>
+            </div>
+            <div class="hero-slide">
+                <div class="hero-background" style="background-image: url('./images/wedding/hero-mobile-2.jpg')"></div>
+            </div>
+            <div class="hero-slide">
+                <div class="hero-background" style="background-image: url('./images/wedding/hero-mobile-3.jpg')"></div>
+            </div>
+        </div>
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1 class="bride-groom-names text-display">
+                    <span class="groom-name">Nguyễn Bá Hà</span>
+                    <span class="and">&</span>
+                    <span class="bride-name">Nguyễn Thị Ngọc</span>
+                </h1>
+                <p class="wedding-date text-accent font-bold">15 . 11 . 2026</p>
+                <p class="invitation-text text-secondary text-xl">Tham dự lễ thành hôn của chúng tôi.</p>
+                <div class="countdown" id="countdown">
+                    <div class="countdown-item">
+                        <span id="days">00</span>
+                        <label>Ngày</label>
+                    </div>
+                    <div class="countdown-item">
+                        <span id="hours">00</span>
+                        <label>Giờ</label>
+                    </div>
+                    <div class="countdown-item">
+                        <span id="minutes">00</span>
+                        <label>Phút</label>
+                    </div>
+                    <div class="countdown-item">
+                        <span id="seconds">00</span>
+                        <label>Giây</label>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="hero-nav-buttons">
+            <button class="hero-prev-btn" onclick="changeHeroSlide(-1)">
+                <i class="fas fa-chevron-left"></i>
+            </button>
+            <button class="hero-next-btn" onclick="changeHeroSlide(1)">
+                <i class="fas fa-chevron-right"></i>
+            </button>
+        </div>
+        <div class="hero-indicators">
+            <span class="hero-dot active" onclick="currentHeroSlide(1)"></span>
+            <span class="hero-dot" onclick="currentHeroSlide(2)"></span>
+            <span class="hero-dot" onclick="currentHeroSlide(3)"></span>
+        </div>
+        <button type="button" class="scroll-down" aria-label="Cuộn xuống">
+            <i class="fas fa-chevron-down"></i>
+        </button>
+    </section>
+
+    <!-- Couple Section -->
+    <section id="couple" class="section-padding">
+        <div class="container">
+            <div class="text-center">
+                <h3 class="header animate-on-scroll fade-in-up">Cô dâu &amp; Chú rể</h3>
+            </div>
+            <div class="couple-card bride-section">
+                <div class="couple-photos animate-on-scroll slide-in-left">
+                    <img src="./images/wedding/bride-main.jpg" class="couple-photo-main" alt="Cô Dâu">
+                    <img src="./images/wedding/bride-sub.jpg" class="couple-photo-sub" alt="Cô Dâu">
+                </div>
+                <div class="couple-info animate-on-scroll fade-in-up">
+                    <p class="couple-role">Cô Dâu</p>
+                    <h4 class="couple-name">Nguyễn Thị Ngọc</h4>
+                    <span class="couple-divider"></span>
+                    <p class="text-secondary couple-desc">
+                        Là một nhân viên văn phòng hiện đang làm việc tại Hà Nội. Tính cách là người hiền lành và ít nói, luôn coi trọng tình cảm và yêu thương gia đình.
+                    </p>
+                    <div class="social-links">
+                        <a href="#" class="bride-facebook-link social-link" target="_blank" rel="noopener">
+                            <i class="fab fa-facebook-f"></i>
+                            <span>Facebook</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="couple-card groom-section couple-card--reverse">
+                <div class="couple-photos animate-on-scroll slide-in-right">
+                    <img src="./images/wedding/groom-main.jpg" class="couple-photo-main" alt="Chú Rể">
+                    <img src="./images/wedding/groom-sub.jpg" class="couple-photo-sub" alt="Chú Rể">
+                </div>
+                <div class="couple-info animate-on-scroll fade-in-up">
+                    <p class="couple-role">Chú Rể</p>
+                    <h4 class="couple-name">Nguyễn Bá Hà</h4>
+                    <span class="couple-divider"></span>
+                    <p class="text-secondary couple-desc">
+                        Là một lập trình viên hiện đang làm việc tại Hà Nội. Tính cách là người hiền lành và ít nói, luôn coi trọng tình cảm và yêu thương gia đình.
+                    </p>
+                    <div class="social-links">
+                        <a href="#" class="groom-facebook-link social-link" target="_blank" rel="noopener">
+                            <i class="fab fa-facebook-f"></i>
+                            <span>Facebook</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="section-padding">
+        <div class="container gallery-container">
+            <div class="text-center">
+                <h3 class="header">Ảnh Cưới</h3>
+            </div>
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <a class="fancybox" rel="group" href="./images/wedding/gallery-05.jpg">
+                        <div class="img-wrap">
+                            <div class="overlay">
+                                <i class="fa fa-search"></i>
+                            </div>
+                            <img src="./images/wedding/gallery-05-thumb.jpg" alt="Ảnh cưới 1" loading="lazy"/>
+                        </div>
+                    </a>
+                </div>
+                <div class="gallery-item">
+                    <a class="fancybox" rel="group" href="./images/wedding/gallery-16.jpg">
+                        <div class="img-wrap">
+                            <div class="overlay">
+                                <i class="fa fa-search"></i>
+                            </div>
+                            <img src="./images/wedding/gallery-16-thumb.jpg" alt="Ảnh cưới 2" loading="lazy"/>
+                        </div>
+                    </a>
+                </div>
+                <div class="gallery-item">
+                    <a class="fancybox" rel="group" href="./images/wedding/gallery-10.jpg">
+                        <div class="img-wrap">
+                            <div class="overlay">
+                                <i class="fa fa-search"></i>
+                            </div>
+                            <img src="./images/wedding/gallery-10-thumb.jpg" alt="Ảnh cưới 3" loading="lazy"/>
+                        </div>
+                    </a>
+                </div>
+                <div class="gallery-item">
+                    <a class="fancybox" rel="group" href="./images/wedding/gallery-02.jpg">
+                        <div class="img-wrap">
+                            <div class="overlay">
+                                <i class="fa fa-search"></i>
+                            </div>
+                            <img src="./images/wedding/gallery-02-thumb.jpg" alt="Ảnh cưới 4" loading="lazy"/>
+                        </div>
+                    </a>
+                </div>
+                <div class="gallery-item">
+                    <a class="fancybox" rel="group" href="./images/wedding/gallery-13.jpg">
+                        <div class="img-wrap">
+                            <div class="overlay">
+                                <i class="fa fa-search"></i>
+                            </div>
+                            <img src="./images/wedding/gallery-13-thumb.jpg" alt="Ảnh cưới 5" loading="lazy"/>
+                        </div>
+                    </a>
+                </div>
+                <div class="gallery-item">
+                    <a class="fancybox" rel="group" href="./images/wedding/gallery-09.jpg">
+                        <div class="img-wrap">
+                            <div class="overlay">
+                                <i class="fa fa-search"></i>
+                            </div>
+                            <img src="./images/wedding/gallery-09-thumb.jpg" alt="Ảnh cưới 6" loading="lazy"/>
+                        </div>
+                    </a>
+                </div>
+                <div class="gallery-item">
+                    <a class="fancybox" rel="group" href="./images/wedding/gallery-01.jpg">
+                        <div class="img-wrap">
+                            <div class="overlay">
+                                <i class="fa fa-search"></i>
+                            </div>
+                            <img src="./images/wedding/gallery-01-thumb.jpg" alt="Ảnh cưới 7" loading="lazy"/>
+                        </div>
+                    </a>
+                </div>
+                <div class="gallery-item">
+                    <a class="fancybox" rel="group" href="./images/wedding/gallery-15.jpg">
+                        <div class="img-wrap">
+                            <div class="overlay">
+                                <i class="fa fa-search"></i>
+                            </div>
+                            <img src="./images/wedding/gallery-15-thumb.jpg" alt="Ảnh cưới 8" loading="lazy"/>
+                        </div>
+                    </a>
+                </div>
+                <div class="gallery-item">
+                    <a class="fancybox" rel="group" href="./images/wedding/gallery-03.jpg">
+                        <div class="img-wrap">
+                            <div class="overlay">
+                                <i class="fa fa-search"></i>
+                            </div>
+                            <img src="./images/wedding/gallery-03-thumb.jpg" alt="Ảnh cưới 9" loading="lazy"/>
+                        </div>
+                    </a>
+                </div>
+                <div class="gallery-item">
+                    <a class="fancybox" rel="group" href="./images/wedding/gallery-11.jpg">
+                        <div class="img-wrap">
+                            <div class="overlay">
+                                <i class="fa fa-search"></i>
+                            </div>
+                            <img src="./images/wedding/gallery-11-thumb.jpg" alt="Ảnh cưới 10" loading="lazy"/>
+                        </div>
+                    </a>
+                </div>
+                <div class="gallery-item">
+                    <a class="fancybox" rel="group" href="./images/wedding/gallery-18.jpg">
+                        <div class="img-wrap">
+                            <div class="overlay">
+                                <i class="fa fa-search"></i>
+                            </div>
+                            <img src="./images/wedding/gallery-18-thumb.jpg" alt="Ảnh cưới 11" loading="lazy"/>
+                        </div>
+                    </a>
+                </div>
+                <div class="gallery-item">
+                    <a class="fancybox" rel="group" href="./images/wedding/gallery-06.jpg">
+                        <div class="img-wrap">
+                            <div class="overlay">
+                                <i class="fa fa-search"></i>
+                            </div>
+                            <img src="./images/wedding/gallery-06-thumb.jpg" alt="Ảnh cưới 12" loading="lazy"/>
+                        </div>
+                    </a>
+                </div>
+                <div class="gallery-item">
+                    <a class="fancybox" rel="group" href="./images/wedding/gallery-12.jpg">
+                        <div class="img-wrap">
+                            <div class="overlay">
+                                <i class="fa fa-search"></i>
+                            </div>
+                            <img src="./images/wedding/gallery-12-thumb.jpg" alt="Ảnh cưới 13" loading="lazy"/>
+                        </div>
+                    </a>
+                </div>
+                <div class="gallery-item">
+                    <a class="fancybox" rel="group" href="./images/wedding/gallery-04.jpg">
+                        <div class="img-wrap">
+                            <div class="overlay">
+                                <i class="fa fa-search"></i>
+                            </div>
+                            <img src="./images/wedding/gallery-04-thumb.jpg" alt="Ảnh cưới 14" loading="lazy"/>
+                        </div>
+                    </a>
+                </div>
+                <div class="gallery-item">
+                    <a class="fancybox" rel="group" href="./images/wedding/gallery-17.jpg">
+                        <div class="img-wrap">
+                            <div class="overlay">
+                                <i class="fa fa-search"></i>
+                            </div>
+                            <img src="./images/wedding/gallery-17-thumb.jpg" alt="Ảnh cưới 15" loading="lazy"/>
+                        </div>
+                    </a>
+                </div>
+                <div class="gallery-item">
+                    <a class="fancybox" rel="group" href="./images/wedding/gallery-07.jpg">
+                        <div class="img-wrap">
+                            <div class="overlay">
+                                <i class="fa fa-search"></i>
+                            </div>
+                            <img src="./images/wedding/gallery-07-thumb.jpg" alt="Ảnh cưới 16" loading="lazy"/>
+                        </div>
+                    </a>
+                </div>
+                <div class="gallery-item">
+                    <a class="fancybox" rel="group" href="./images/wedding/gallery-14.jpg">
+                        <div class="img-wrap">
+                            <div class="overlay">
+                                <i class="fa fa-search"></i>
+                            </div>
+                            <img src="./images/wedding/gallery-14-thumb.jpg" alt="Ảnh cưới 17" loading="lazy"/>
+                        </div>
+                    </a>
+                </div>
+                <div class="gallery-item">
+                    <a class="fancybox" rel="group" href="./images/wedding/gallery-08.jpg">
+                        <div class="img-wrap">
+                            <div class="overlay">
+                                <i class="fa fa-search"></i>
+                            </div>
+                            <img src="./images/wedding/gallery-08-thumb.jpg" alt="Ảnh cưới 18" loading="lazy"/>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Wedding Details Section -->
+    <section class="events section-padding" id="details">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <h3 class="header animate-on-scroll fade-in-up">Thông tin lễ cưới</h3>
+                </div>
+            </div>
+            <!-- <div class="row events-content">
+                <div class="col-md-6 col-sm-12 col-xs-12 leftcol animate-on-scroll slide-in-left">
+                    <div class="wp3">
+                        <p><strong>Ngày 15 tháng 11 năm 2026
+                                    (Ngày 07 tháng 10 năm Bính Ngọ)</strong></p>
+
+                        <h5>Lễ ăn hỏi <span class="time">7 giờ - 11 giờ</span></h5>
+                        <p><strong>Xe xuất phát từ Hà Nội đi địa điểm lễ lúc 7 giờ 15 phút.</strong></p>
+                    </div>
+                    <div class="wp5">
+                        <h5>Tiệc cưới <span class="time">15 giờ - 19 giờ</span></h5>
+                        <p><strong>Tiệc cưới được tổ chức tại khách sạn bắt đầu từ 15 giờ chiều.</strong></p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-sm-12 col-xs-12 rightcol animate-on-scroll slide-in-right">
+                    <div class="wp4">
+                        <p><strong>Ngày 16 tháng 2 năm 2026
+                            (Ngày 29 tháng 12 Âm lịch)</strong></p>
+
+                        <h5>Lễ cưới <span class="time">10 giờ - 11 giờ</span></h5>
+                        <p><strong>Xe xuất phát từ Hà Nội đi địa điểm lễ lúc 7 giờ 15 phút.</strong></p>
+                    </div>
+                    <div class="wp6">
+                        <h5>Tiệc cưới <span class="time">11 giờ - 13 giờ</span></h5>
+                        <p><strong>Tiệc cưới được tổ chức tại khách sạn bắt đầu từ 11 giờ trưa.</strong></p>
+                    </div>
+                </div>
+            </div> -->
+            <div class="event-cards">
+                <a class="event-card fancybox animate-on-scroll slide-in-left" rel="event-cards" href="./images/wedding/card-nha-trai.jpg">
+                    <img src="./images/wedding/card-nha-trai.jpg" alt="Thiệp mời Lễ Thành Hôn - Gia đình nhà trai" loading="lazy">
+                    <span class="event-card-label">Nhà trai · Lễ Thành Hôn</span>
+                </a>
+                <a class="event-card fancybox animate-on-scroll slide-in-right" rel="event-cards" href="./images/wedding/card-nha-gai.jpg">
+                    <img src="./images/wedding/card-nha-gai.jpg" alt="Thiệp mời Lễ Vu Quy - Gia đình nhà gái" loading="lazy">
+                    <span class="event-card-label">Nhà gái · Lễ Vu Quy</span>
+                </a>
+            </div>
+        </div>
+    </section>
+            
+            <!-- Google Maps
+            <div class="map-container">
+                <h3 class="text-center">Bản Đồ Chỉ Đường</h3>
+                <div class="maps-grid">
+                    <div class="map-item">
+                        <h4>🏠 Nhà Gái</h4>
+                        <p class="map-address">Xóm 3, xã Giao Bình, tỉnh Ninh Bình</p>
+                        <div class="map-wrapper">
+                            <iframe 
+                                id="brideMap"
+                                src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3739.7946!2d106.3995918!3d20.2429722!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMjDCsDE0JzM0LjciTiAxMDbCsDI0JzA3LjgiRQ!5e0!3m2!1sen!2s!4v1640995200000!5m2!1sen!2s"
+                                width="100%" 
+                                height="300" 
+                                style="border:0;" 
+                                allowfullscreen="" 
+                                loading="lazy">
+                            </iframe>
+                        </div>
+                    </div>
+                    
+                    <div class="map-item">
+                        <h4>🏠 Nhà Trai</h4>
+                        <p class="map-address">Xóm 3, xã Giao Bình, tỉnh Ninh Bình</p>
+                        <div class="map-wrapper">
+                            <iframe 
+                                id="groomMap"
+                                src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3739.7946!2d106.3995918!3d20.2429722!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMjDCsDE0JzM0LjciTiAxMDbCsDI0JzA3LjgiRQ!5e0!3m2!1sen!2s!4v1640995200000!5m2!1sen!2s"
+                                width="100%" 
+                                height="300" 
+                                style="border:0;" 
+                                allowfullscreen="" 
+                                loading="lazy">
+                            </iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> -->
+    </section>
+    <section>
+          <p class="rsvp-description text-secondary text-large">
+                Sự hiện diện của bạn sẽ làm cho ngày cưới của chúng tôi trở nên hoàn hảo hơn
+            </p>
+            
+    </section>
+    <!-- RSVP Section -->
+    <!-- <section id="rsvp" class="rsvp-section">
+        <div class="container">
+            <h2 class="section-title">Xác Nhận Tham Dự</h2>
+            <p class="rsvp-description text-secondary text-large">
+                Sự hiện diện của bạn sẽ làm cho ngày cưới của chúng tôi trở nên hoàn hảo hơn
+            </p>
+            
+            <form class="rsvp-form" id="rsvpForm">
+                <div class="form-group">
+                    <label for="guestName">Họ và tên *</label>
+                    <input type="text" id="guestName" name="guestName" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="guestEmail">Email</label>
+                    <input type="email" id="guestEmail" name="guestEmail">
+                </div>
+                
+                <div class="form-group">
+                    <label for="guestPhone">Số điện thoại</label>
+                    <input type="tel" id="guestPhone" name="guestPhone">
+                </div>
+                
+                <div class="form-group">
+                    <label for="attendance">Bạn có thể tham dự không? *</label>
+                    <select id="attendance" name="attendance" required>
+                        <option value="">-- Chọn --</option>
+                        <option value="yes">Có, tôi sẽ tham dự</option>
+                        <option value="no">Rất tiếc, tôi không thể tham dự</option>
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label for="guestCount">Số người tham dự</label>
+                    <input type="number" id="guestCount" name="guestCount" min="1" max="10" value="1">
+                </div>
+                
+                <div class="form-group">
+                    <label for="message">Lời chúc</label>
+                    <textarea id="message" name="message" rows="4" placeholder="Hãy gửi lời chúc đến cô dâu chú rể..."></textarea>
+                </div>
+                
+                <div class="text-center">
+                    <button type="submit" class="submit-btn">
+                        <i class="fas fa-paper-plane"></i>
+                        Gửi xác nhận
+                    </button>
+                </div>
+            </form>
+        </div>
+    </section> -->
+
+    <!-- Banking Section -->
+    <!-- <section id="banking" class="banking-section">
+        <div class="container">
+            <h2 class="section-title">Mừng Cưới</h2>
+            <p class="banking-description text-secondary text-large">
+                Thay lời chúc, cảm ơn bạn đã gửi lời chúc mừng đến đám cưới của chúng tôi
+            </p>
+            
+            <div class="banking-container">
+                <div class="banking-card bride-banking">
+                    <div class="banking-header">
+                        <div class="banking-icon">
+                            <i class="fas fa-heart"></i>
+                        </div>
+                        <h3>Cô Dâu</h3>
+                        <p class="person-name">Nguyễn Bá Hà</p>
+                    </div>
+                    
+                    <div class="banking-details">
+                        <div class="bank-info">
+                            <p><strong>Ngân hàng:</strong> <span class="bank-name">Ngân hàng BIDV</span></p>
+                            <p><strong>Số tài khoản:</strong> <span class="account-number">SO_TAI_KHOAN</span></p>
+                            <p><strong>Tên tài khoản:</strong> <span class="account-name">TEN_CHU_TAI_KHOAN</span></p>
+                        </div>
+                        
+                        <div class="qr-code">
+                            <img src="" alt="QR Code cô dâu" class="qr-image">
+                            <p class="qr-text">Quét mã QR để chuyển khoản</p>
+                        </div>
+                    </div>
+                    
+                    <button class="copy-btn" onclick="copyAccountInfo('bride')">
+                        <i class="fas fa-copy"></i> Sao chép thông tin
+                    </button>
+                </div>
+                
+                <div class="banking-card groom-banking">
+                    <div class="banking-header">
+                        <div class="banking-icon">
+                            <i class="fas fa-heart"></i>
+                        </div>
+                        <h3>Chú Rể</h3>
+                        <p class="person-name">Nguyễn Bá Hà</p>
+                    </div>
+                    
+                    <div class="banking-details">
+                        <div class="bank-info">
+                            <p><strong>Ngân hàng:</strong> <span class="bank-name">Ngân hàng Vietcombank</span></p>
+                            <p><strong>Số tài khoản:</strong> <span class="account-number">SO_TAI_KHOAN</span></p>
+                            <p><strong>Tên tài khoản:</strong> <span class="account-name">TEN_CHU_TAI_KHOAN</span></p>
+                        </div>
+                        
+                        <div class="qr-code">
+                            <img src="" alt="QR Code chú rể" class="qr-image">
+                            <p class="qr-text">Quét mã QR để chuyển khoản</p>
+                        </div>
+                    </div>
+                    
+                    <button class="copy-btn" onclick="copyAccountInfo('groom')">
+                        <i class="fas fa-copy"></i> Sao chép thông tin
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section> -->
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 text-center content">
+                    <a href="#home" class="to-top" aria-label="Lên đầu trang"><i class="fa fa-angle-up"></i></a>
+                    <h3 class="footer-names">Hà <i class="fa fa-heart footer-heart"></i> Ngọc</h3>
+                    <p class="footer-date">15 . 11 . 2026</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript Dependencies -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
+    
+    <!-- Custom Scripts -->
+    <script src="script.js"></script>
+    <script src="config-loader.js"></script>
+</body>
+</html>
