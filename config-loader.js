@@ -129,8 +129,9 @@ function applyCoupleInfo() {
     // Cập nhật tên trong hero section
     const brideNameElement = document.querySelector('.bride-name');
     const groomNameElement = document.querySelector('.groom-name');
-    if (brideNameElement) brideNameElement.textContent = bride.name;
-    if (groomNameElement) groomNameElement.textContent = groom.name;
+    // Ảnh bìa dùng tên đầy đủ (fullName), phần Cô dâu & Chú rể dùng name
+    if (brideNameElement) brideNameElement.textContent = bride.fullName || bride.name;
+    if (groomNameElement) groomNameElement.textContent = groom.fullName || groom.name;
 }
 
 // Áp dụng thông tin ngày cưới
@@ -154,12 +155,14 @@ function applyWeddingDate() {
         const brideNameElement = document.querySelector('.bride-name');
         const groomNameElement = document.querySelector('.groom-name');
         
-        if (brideNameElement && weddingConfig.coupleInfo.bride.name) {
-            brideNameElement.textContent = weddingConfig.coupleInfo.bride.name;
+        const { bride, groom } = weddingConfig.coupleInfo;
+        
+        if (brideNameElement && (bride.fullName || bride.name)) {
+            brideNameElement.textContent = bride.fullName || bride.name;
         }
         
-        if (groomNameElement && weddingConfig.coupleInfo.groom.name) {
-            groomNameElement.textContent = weddingConfig.coupleInfo.groom.name;
+        if (groomNameElement && (groom.fullName || groom.name)) {
+            groomNameElement.textContent = groom.fullName || groom.name;
         }
     }
     

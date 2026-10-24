@@ -4,6 +4,7 @@
     "_comment": "Thông tin cô dâu chú rể",
     "bride": {
       "name": "Nguyễn Ngọc",
+      "fullName": "Nguyễn Thị Ngọc",
       "title": "Cô Dâu",
       "parents": "Con gái của ông bà Nguyễn Văn Điệp và Phạm Thị Ngoan",
 
@@ -25,6 +26,7 @@
     },
     "groom": {
       "name": "Bá Hà",
+      "fullName": "Nguyễn Bá Hà",
       "title": "Chú Rể",
       "parents": "Con trai của ông bà Nguyễn Văn Cường và Trần Thị Nga",
       "description": "Tôi thích một cuộc sống bình dị, trân trọng gia đình và sự thủy chung. Với tôi, hạnh phúc không nằm ở việc hơn người khác, mà là có một người cùng mình đi qua những năm tháng bình thường bằng sự chân thành, tôn trọng và yêu thương.",
