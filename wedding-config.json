@@ -247,8 +247,8 @@
     "_comment": "Cài đặt nhạc nền",
     "musicFile": "./images/wedding-music.mp3",
     "volume": 0.3,
-    "startTime": 60,
-    "_startTimeComment": "Nhạc bắt đầu (và mỗi lần lặp lại) từ giây này. 60 = phút thứ 1",
+    "startTime": 10,
+    "_startTimeComment": "Nhạc bắt đầu (và mỗi lần lặp lại) từ giây này (tính bằng giây, ví dụ 60 = phút thứ 1)",
     "autoPlay": true
   },
   "seoSettings": {
