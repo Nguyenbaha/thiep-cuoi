@@ -3,7 +3,7 @@
   "coupleInfo": {
     "_comment": "Thông tin cô dâu chú rể",
     "bride": {
-      "name": "Nguyễn Thị Ngọc",
+      "name": "Nguyễn Ngọc",
       "title": "Cô Dâu",
       "parents": "Con gái của ông bà Nguyễn Văn Điệp và Phạm Thị Ngoan",
 
@@ -20,11 +20,11 @@
           "right": "./images/wedding/bride-sub.jpg"
         }
       },
-      "facebook": "https://www.facebook.com/ngocnguyenmabel",
+      "facebook": "",
       "instagram": "#"
     },
     "groom": {
-      "name": "Nguyễn Bá Hà",
+      "name": "Bá Hà",
       "title": "Chú Rể",
       "parents": "Con trai của ông bà Nguyễn Văn Cường và Trần Thị Nga",
       "description": "Tôi thích một cuộc sống bình dị, trân trọng gia đình và sự thủy chung. Với tôi, hạnh phúc không nằm ở việc hơn người khác, mà là có một người cùng mình đi qua những năm tháng bình thường bằng sự chân thành, tôn trọng và yêu thương.",
@@ -40,7 +40,7 @@
           "right": "./images/wedding/groom-sub.jpg"
         }
       },
-      "facebook": "https://www.facebook.com/nguyen.ba.ha.661706",
+      "facebook": "",
       "instagram": "#"
     }
   },
